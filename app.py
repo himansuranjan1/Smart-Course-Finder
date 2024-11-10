@@ -74,6 +74,7 @@ def search_courses(query, filter_option, top_k=10):
     return relevant_courses[['title', 'link', 'lessons', 'rating']]
 
 # Display results
+##checkit
 if query:
     results = search_courses(query, filter_option)
     st.write(f"Showing top results based on your query: '{query}'")
